@@ -1,0 +1,11 @@
+<md-autocomplete md-no-cache="true" md-selected-item="ctrl.selectedItem" md-search-text="ctrl.searchText" md-items="item in $ctrl.getData(ctrl.searchText)" md-item-text="item.link_code" md-min-length="0" placeholder="Search for projects and people" md-menu-container-class="custom-container">
+  <md-item-template>
+    <div class="item-title">
+      <span class="img" ng-bind-html="item.image_code"></span>
+      <span class="link-code"> {{item.link_code}} </span>
+    </div>
+  </md-item-template>
+  <md-not-found>
+    No matches.
+  </md-not-found>
+</md-autocomplete>
